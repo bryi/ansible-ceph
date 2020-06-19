@@ -5,7 +5,6 @@ fetch/*
 /vagrant_variables.yml
 group_vars/mdss
 group_vars/rgws
-group_vars/*.yml
 *.DS_Store
 *.pyc
 *.sw?
