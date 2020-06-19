@@ -1,0 +1,14 @@
+[mons]
+node-1
+node-2
+node-3
+
+[osds]
+node-1
+node-2
+node-3
+
+[mgrs]
+node-1
+node-2
+node-3
