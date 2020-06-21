@@ -20,15 +20,25 @@
 
     - import_tasks: raw_install_python.yml
 
-    - name: pip uninstall modules
-      pip:
-        name: requests, urllib3
-        state: absent
-      become: yes
-    
     - name: yum uninstall modules
       yum:
         name: python-requests, python-urllib3
+        state: absent
+      become: yes
+    
+    - name: yum install epel-release
+      yum:
+        name: epel-release
+      become: yes
+      
+    - name: yum install modules
+      yum:
+        name: python, python-pip
+      become: yes
+
+    - name: pip uninstall modules
+      pip:
+        name: requests, urllib3
         state: absent
       become: yes
 

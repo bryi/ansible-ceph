@@ -1,14 +1,12 @@
 [mons]
-node-1
-node-2
-node-3
+ceph-1
+ceph-2
+ceph-3
 
 [osds]
-node-1
-node-2
-node-3
+ceph-1
+ceph-2
+ceph-3
 
 [mgrs]
-node-1
-node-2
-node-3
+ceph-1
